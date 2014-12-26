@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <script type="text/javascript" src="js/mysite.js">
+  </script>
+    <title>Welcome to my site</title>
+    
+  </head>
+  <body>
+    <div class="search">
+      <form method="get" id="search" action="">
+        <span>
+          <input type="text" value="Search..." name="s" id="s" />
+          <input name="searchsubmit" type="image" src="images/search.gif" value="Go" id="searchsubmit" class="btn"  />
+        </span>
+      </form>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="logo">
+          <h2><a href="index.html">JYooTai's Blog</a></h2>
+        </div>
+        <div class="menu_nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://blog.jyootai.com">Detail</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="hbg"><img src="images/header_images.jpg" width="923" height="230" alt="header images" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_bg">
+          <div class="mainbar">
+            <div class="article">
+              <h2>Contact Me</h2>
+              <p>If you want to contacet me, you can find me by: </p>
+              <p>QQ: 745865132</p>
+              <p>Email: jyootg@gmail.com</p>
+              <p>Twitter: <a href="https:twitter.com/jyootai">@jyootai</a></p>
+              <p>Facebook <a href="https://facebook.com/jyootai">jyootai</a></p>
+            </div>
+            <div class="article">
+              <h2><span>Leave a</span> Reply</h2><div class="clr"></div>
+              <form action="#" method="post" id="leavereply"  onsubmit="return validates()";>
+              <ol><li>
+                <label>Name (required)</label>
+                <input id="name" name="name" class="text" onBlur="checkName(this)" /> *
+                <div id="name-error" style="color:red"></div>
+                </li><li>
+                <label>Email Address (required)</label>
+                <input id="email" name="email" class="text" onBlur="checkEmail(this)" /> *
+                <div id="email-error" style="color:red"></div>
+                </li><li>
+                <label>Website</label>
+                <input id="website" name="website" class="text" />
+                </li><li>
+                <label>Your Message(required) *</label>
+                <textarea id="message" name="message" rows="8" cols="50" onBlur="checkMessage(this)"></textarea>
+                <div id="message-error" style="color:red"></div>
+                </li><li>
+                <input type="image" src="images/submit.gif" class="send" />
+              </li></ol>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_resize">
+        <p class="center">© Copyright <a href="http://blog.jyootai.com">Jyootai</a>.</p>
+      </div>
+    </div>
+  </body>
+</html>

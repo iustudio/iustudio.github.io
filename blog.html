@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type="text/javascript" src="js/mysite.js"></script>
+      
+    <title>Welcome to my site</title>
+    
+  </head>
+  <body>
+    <div class="search">
+      <form method="get" id="search" action="">
+        <span>
+          <input type="text" value="Search..." name="s" id="s" />
+          <input name="searchsubmit" type="image" src="images/search.gif" value="Go" id="searchsubmit" class="btn"  />
+        </span>
+      </form>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="logo">
+          <h2><a href="index.html">JYooTai's Blog</a></h2>
+        </div>
+        <div class="menu_nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://blog.jyootai.com">Detail</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li class="active"><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="hbg"><img src="images/header_images.jpg" width="923" height="230" alt="header images" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_bg">
+          <div class="mainbar">
+            <div class="article">
+              <h2><span>Ruby 2.2.0 Released</span></h2>
+              <p class="post-data"> Posted by <a href="http://blog.jyootai.com">jyootai</a> &nbsp;|&nbsp; Filed under <a href="http://elixir-lang.org/">Ruby</a>, <a href="#">Pragramming Language</a></p>
+              <p>
+              We are pleased to announce the release of Ruby 2.2.0.</p>
+              <p>Ruby 2.2 includes many new features and improvements for the increasingly diverse and expanding demands for Ruby.</p>
+              <p>For example, Ruby’s Garbage Collector is now able to collect Symbol type objects. This reduces memory usage of Symbols; because GC was previously unable to collect them before 2.2. Since Rails 5.0 will require Symbol GC, it will support only Ruby 2.2 or later</p>
+              <p>Also, a reduced pause time thanks to the new Incremental Garbage Collector will be helpful for running Rails applications. Recent developments mentioned on the Rails blog suggest that Rails 5.0 will take advantage of Incremental GC as well as Symbol GC.</p>
+              <p>Another feature related to memory management is an additional option for configure.in to use jemalloc Feature #9113. This feature is still experimental and currently disabled by default until we gather performance data and more use cases. When we are convinced of the benefits, this feature will be enabled by default.</p>
+              <p>Tagged: <a href="#">language</a>, <a href="#">ruby</a></p>
+              <p><a href="#"><strong>Comments (3)</strong></a>  <span>&nbsp;&bull;&nbsp;</span> Dec 25, 2014  <span>&nbsp;&bull;&nbsp;</span>  <a href="#"><strong>Edit</strong></a></p>
+            </div>
+            <div class="article">
+              <h2><span>3</span> Responses</h2><div class="clr"></div>
+              <div class="comment">
+                <a href="#"><img src="images/userpic.gif" width="40" height="40" alt="user" class="userpic" /></a>
+                <p><a href="#">mrmondo</a> Says:<br />Dec 25, 2014 at 8:48 pm</p>
+                <p>Great work to the ruby team, the improvements in Ruby's performance since 2.x have been very impressive to say the least. Well done and Merry Christmas to everyone that worked hard on this release.
+                </p>
+              </div>
+              <div class="comment">
+                <a href="#"><img src="images/userpic.gif" width="40" height="40" alt="user" class="userpic" /></a>
+                <p><a href="#">hit8run</a> Says:<br />Dec 25, 2014 at 6:31 pm</p>
+                <p>Ruby seems to continuously move forward. Great to see that they manage to keep this project alive without a python 2vs3 disaster.</p>
+              </div>
+              <div class="comment">
+                <a href="#"><img src="images/userpic.gif" width="40" height="40" alt="user" class="userpic" /></a>
+                <p><a href="#">hackerboos</a> Says:<br />Dec 25, 2014 at 7:17 pm</p>
+                <p>That's what happens when you maintain two versions, one of which has fundamental breaking changes.
+                When the Ruby team makes changes the attitude is generally 'deal with it'. Sure they still do point releases on older versions but only for security issues AFAIK.
+                Python moves forward it just does a poor job of dragging everyone with it.</p>
+              </div>
+            </div>
+            <div class="article">
+              <h2><span>Leave a</span> Reply</h2><div class="clr"></div>
+              <form action="#" method="post" id="leavereply"  onsubmit="return validates()";>
+              <ol><li>
+                <label>Name (required)</label>
+                <input id="name" name="name" class="text" onBlur="checkName(this)" /> *
+                <div id="name-error" style="color:red"></div>
+                </li><li>
+                <label>Email Address (required)</label>
+                <input id="email" name="email" class="text" onBlur="checkEmail(this)" /> *
+                <div id="email-error" style="color:red"></div>
+                </li><li>
+                <label>Website</label>
+                <input id="website" name="website" class="text" />
+                </li><li>
+                <label>Your Message(required) *</label>
+                <textarea id="message" name="message" rows="8" cols="50" onBlur="checkMessage(this)"></textarea>
+                <div id="message-error" style="color:red"></div>
+                </li><li>
+                <input type="image" src="images/submit.gif" class="send" />
+              </li></ol>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_resize">
+        <p class="center">© Copyright <a href="http://blog.jyootai.com">Jyootai</a>.</p>
+      </div>
+    </div>
+  </body>
+</html>
